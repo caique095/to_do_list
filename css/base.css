@@ -83,10 +83,6 @@ li{
     width: 15rem;
 }
 
-.lista-btn{
-    
-}
-
 .item{
     margin: 1rem 0;
     font-size: 1.2rem;
@@ -115,4 +111,24 @@ li{
 .check{
     text-decoration: line-through;
     text-decoration-color: #2da23f;
+}
+
+
+/* ===== MEDIA QUERY =====  */
+
+@media only screen and (max-width: 600px){
+    .top-titulo{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .top-text{
+        font-size: 3rem;
+    }
+
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
