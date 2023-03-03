@@ -23,10 +23,16 @@ function criaTarefa() {
     } else {
         msgErro.textContent = '';
     }
-    
+
     const novaTarefa = document.createElement('li');
     novaTarefa.textContent = inTarefa.value;
     lista.appendChild(novaTarefa);
+
+    novaTarefa.classList.add('animacao-tarefa');
+
+    setTimeout(() => {
+        novaTarefa.classList.remove('animacao-tarefa')
+    }, 500);
 
     const span = document.createElement('span');
     span.classList.add('texto-tarefa');
