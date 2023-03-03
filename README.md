@@ -1,7 +1,9 @@
 ![Forecast](https://user-images.githubusercontent.com/101210878/222850966-a8c01419-57c4-467f-b032-4a4b3ce977f9.png)
 
 <h1>seu assistente pessoal para o sucesso!</h1>
-![WF](https://user-images.githubusercontent.com/101210878/222853799-c48e15dd-455f-4c17-8dd4-0f3410bbb3e8.jpg)
+
+![WF](https://user-images.githubusercontent.com/101210878/222854005-0e43150f-6d00-4a41-88e1-c91edd7a32b9.jpg)
+
 
 <br><br>
 
