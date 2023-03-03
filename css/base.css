@@ -90,7 +90,7 @@ li{
     border-radius: .3rem;
 }
 
-.btn-acao{
+.btn-acao_trash, .btn-acao_check{
     border: none;
     padding: .3rem;
     font-size: 1.2rem;
@@ -104,13 +104,22 @@ li{
     margin-left: .4rem;
 }
 
-.btn-acao:hover{
-    color: #212121;
+.btn-acao_check:hover{
+    color: #2da23f;
+}
+
+.btn-acao_trash:hover{
+    color: #f0426e;
 }
 
 .check{
     text-decoration: line-through;
     text-decoration-color: #2da23f;
+}
+
+#mensagemErro{
+    color: #f0426e;
+    font-size: .8rem;
 }
 
 

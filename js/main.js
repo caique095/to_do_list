@@ -2,13 +2,13 @@ const form = document.querySelector('#form');
 const inTarefa = document.querySelector('#form-tarefa')
 const btnAddTarefa = document.querySelector('#addTarefa');
 const lista = document.querySelector('#lista')
+const msgErro = document.querySelector('#mensagemErro')
 
 
 // ====== EVENTOS ======
 
 form.addEventListener('submit' , (e) => {
     e.preventDefault();
-
     criaTarefa();
 })
 
@@ -17,6 +17,13 @@ form.addEventListener('submit' , (e) => {
 
 function criaTarefa() {
 
+    if(inTarefa.value === '') {
+        msgErro.textContent = 'O campo de entrada não pode estar vazio!';
+        return;
+    } else {
+        msgErro.textContent = '';
+    }
+    
     const novaTarefa = document.createElement('li');
     novaTarefa.textContent = inTarefa.value;
     lista.appendChild(novaTarefa);
@@ -28,7 +35,7 @@ function criaTarefa() {
     div.classList.add('btn');
 
     const btnEditar = document.createElement('button');
-    btnEditar.classList.add('btn-acao');
+    btnEditar.classList.add('btn-acao_check');
     btnEditar.innerHTML = ' <i class="fa fa-check"></i> ';
     btnEditar.addEventListener('click', e => {
         novaTarefa.classList.add('check')
@@ -38,7 +45,7 @@ function criaTarefa() {
     inTarefa.focus();
 
     const btnExcluir = document.createElement('button');
-    btnExcluir.classList.add('btn-acao');
+    btnExcluir.classList.add('btn-acao_trash');
     btnExcluir.innerHTML = ' <i class="fa fa-trash"></i> ';
     btnExcluir.addEventListener('click', e => {
 
@@ -52,7 +59,9 @@ function criaTarefa() {
     div.appendChild(btnExcluir);
 
     novaTarefa.appendChild(span);
-    novaTarefa.appendChild(div);
+    novaTarefa.appendChild(div);    
     
+
     return lista;
+
 }
